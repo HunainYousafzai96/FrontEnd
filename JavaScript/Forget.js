@@ -8,10 +8,8 @@ function validateForm() {
   if (EmailReg.test(Email)) {
     document.getElementById("EmailError").innerHTML = "";
     email = true;
-  } else if (Email.length == 0) {
-    document.getElementById("EmailError").innerHTML =
-      "Please Enter Email Address";
   } else {
+    document.getElementById("EmailError").style.color = "Red";
     document.getElementById("EmailError").innerHTML =
       "Please Enter Valid Email Address";
   }
@@ -22,17 +20,6 @@ function validateForm() {
     return false;
   }
 }
-
-$(document).ready(function () {
-  $("#open").click(function () {
-    $("#open").hide();
-    $("#closed").show();
-    $("#password").attr("type", "text");
-  });
-
-  $("#closed").click(function () {
-    $("#closed").hide();
-    $("#open").show();
-    $("#password").attr("type", "password");
-  });
-});
+function Clear() {
+  document.getElementById("EmailError").innerHTML = "";
+}

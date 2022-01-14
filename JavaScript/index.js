@@ -9,26 +9,20 @@ function validateForm() {
   if (EmailReg.test(Email)) {
     document.getElementById("EmailError").innerHTML = "";
     Email = true;
-  } else if (Email.length == 0) {
-    document.getElementById("EmailError").innerHTML =
-      "Please Enter Email Address";
-    Email = false;
   } else {
+    document.getElementById("EmailError").style.color = "Red";
     document.getElementById("EmailError").innerHTML =
       "Please Enter Valid Email Address";
     Email = false;
   }
 
-  if (Password.length == 0) {
-    document.getElementById("PasswordError").innerHTML =
-      "Please Enter Password [a-zA-Z0-9]";
-    Password = false;
-  } else if (Password_regex.test(Password)) {
+  if (Password_regex.test(Password)) {
     document.getElementById("PasswordError").innerHTML = "";
     Password = true;
   } else {
+    document.getElementById("PasswordError").style.color = "Red";
     document.getElementById("PasswordError").innerHTML =
-      "Please Enter Valid Password [a-zA-Z0-9] ";
+      "Please Enter Valid Password";
     Password = false;
   }
 
@@ -38,17 +32,7 @@ function validateForm() {
     return false;
   }
 }
-
-$(document).ready(function () {
-  $("#open").click(function () {
-    $("#open").hide();
-    $("#closed").show();
-    $("#password").attr("type", "text");
-  });
-
-  $("#closed").click(function () {
-    $("#closed").hide();
-    $("#open").show();
-    $("#password").attr("type", "password");
-  });
-});
+function Clear() {
+  document.getElementById("PasswordError").innerHTML = "";
+  document.getElementById("EmailError").innerHTML = "";
+}
