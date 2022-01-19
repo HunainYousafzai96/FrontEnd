@@ -2,12 +2,13 @@ function validateForm() {
   var Email = document.forms["SignUp"]["Email"].value;
   var Name = document.forms["SignUp"]["Name"].value;
   var Password = document.forms["SignUp"]["Password"].value;
+  var NewPassword = document.forms["SignUp"]["NewPassword"].value;
   var Name_regex = /^[a-zA-Z\s]+$/;
 
   var Password_regex = /^[a-zA-Z0-9]+$/;
 
   var EmailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-
+  //Name Validation
   if (Name_regex.test(Name)) {
     document.getElementById("NameError").innerHTML = "";
     Name = true;
@@ -16,7 +17,7 @@ function validateForm() {
     document.getElementById("NameError").innerHTML = "Please Enter Valid Name";
     Name = false;
   }
-
+  //Email Validation
   if (EmailReg.test(Email)) {
     document.getElementById("EmailError").innerHTML = "";
     Email = true;
@@ -26,7 +27,7 @@ function validateForm() {
       "Please Enter Valid Email";
     Email = false;
   }
-
+  //Password or Old Password Validation
   if (Password_regex.test(Password)) {
     document.getElementById("PasswordError").innerHTML = "";
     Password = true;
@@ -36,8 +37,18 @@ function validateForm() {
       "Please Enter Valid Password";
     Password = false;
   }
+  //NewPassword validationS
+  if (Password_regex.test(NewPassword)) {
+    document.getElementById("NewPasswordError").innerHTML = "";
+    NewPassword = true;
+  } else {
+    document.getElementById("NewPasswordError").style.color = "Red";
+    document.getElementById("NewPasswordError").innerHTML =
+      "Please Enter Valid Password";
+    NewPassword = false;
+  }
 
-  if (Email && Name && Password) {
+  if (Email && Name && Password && NewPassword) {
     return true;
   } else {
     return false;

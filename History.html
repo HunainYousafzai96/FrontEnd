@@ -46,7 +46,12 @@
       >
         <i class="fa fa-bars"></i>Menu
       </button>
-      <span class="w3-bar-item w3-right">Logo</span>
+      <span class="w3-bar-item w3-right">  
+        <img
+            src="Image/logo.jpg"
+            class="w3-circle w3-margin-right"
+            style="width: 46px"
+          /></span>
     </div>
 
     <!-- Sidebar/menu -->
@@ -76,7 +81,7 @@
             onclick="document.getElementById('userprofile').style.display='block'"
             ><i class="fa fa-user"></i
           ></a>
-          <a href="Setting.html" class="w3-bar-item w3-button"
+          <a href="Account.html" class="w3-bar-item w3-button"
             ><i class="fa fa-cog"></i
           ></a>
         </div>
@@ -103,18 +108,20 @@
           ><i class="fa fa-eye fa-fw"></i>  Views</a
         >
         <a href="Traffic.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-users fa-fw"></i>  Traffic</a
+          ><i class="fa fa-bar-chart fa-fw"></i>  Traffic</a
         >
         <a href="News.html" class="w3-bar-item w3-button w3-padding"
           ><i class="fa fa-bell fa-fw"></i>  News</a
         >
-        <a href="General.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-bank fa-fw"></i>  General</a
-        >
+        <a
+          href="Vehical Verification.html"
+          class="w3-bar-item w3-button w3-padding"
+          ><i class="fa fa-check-square-o"></i>  Vehical Verification
+        </a>
         <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"
           ><i class="fa fa-history fa-fw"></i>  History</a
         >
-        <a href="Setting.html" class="w3-bar-item w3-button w3-padding"
+        <a href="Account.html" class="w3-bar-item w3-button w3-padding"
           ><i class="fa fa-cog fa-fw"></i>  Settings</a
         ><br /><br />
       </div>
@@ -128,10 +135,193 @@
       title="close side menu"
       id="myOverlay"
     ></div>
-    <div class="w3-main" style="margin-left: 300px; margin-top: 43px">
+    <div class="w3-main" style="margin-left: 300px; margin-top: 60px">
       <!--
         Body Content
         -->
+          <div class="w3-col s8 w3-bar ">
+      <span class=""><strong>
+          <h1>Employee 01</h1>
+        </strong></span><br>
+        <!--image of avtar-->
+        <div class="text-right">
+          <img src="https://ramzan1813.github.io/FrontEnd/Image/avatar2.png" class="rounded" style="width:15%;">
+        </div>
+       
+      <span><strong>
+          <h3>Recent Activities </h3>
+        </strong></span><br>
+    </div>
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button" onclick="openCity('recent')">Recent Activity</button>
+      <button class="w3-bar-item w3-button" onclick="openCity('login')">Login Details</button>
+     
+    </div>
+    <div id="recent" class="w3-container city" >
+      <button class="btn btn-primary  hidden-print pull-right">Generate Report</button><!--button -->
+      <!--table of recent activity-->
+      <table class="w3-table w3-striped w3-white">
+        <tr>
+          <th>Date Of Activity</th>
+          <th>Owner Name</th>
+          <th>Vechile Number</th>
+          <th >Vehicle Image</th>
+        </tr>
+        <tr>
+          <td>May 28 2018</td>
+          <td>Owner Name 01</td>
+          <td><i>Mil 5214 </i></td>
+          <td><i>
+              <div class="avatar-group">
+                <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                  <img alt="Image placeholder"
+                    src="https://cdn.pixabay.com/photo/2017/09/07/19/57/caribbean-2726429_960_720.jpg" class="rounded"
+                    style="width: 46px">
+                </a>
+              </div>
+            </i></td>
+        </tr>
+        <tr>
+          <td>May 15 2018</td>
+          <td>Owner Name 02</td>
+          <td><i>Isl 5412</i></td>
+          <td><i>
+              <div class="avatar-group">
+                <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                  <img alt="Image placeholder"
+                    src="https://cdn.pixabay.com/photo/2014/10/03/17/08/car-471972_960_720.jpg" class="rounded"
+                    style="width: 46px">
+                </a>
+              </div>
+            </i></td>
+        </tr>
+        <tr>
+          <td>May 15 2018</td>
+          <td>Owner Name 03</td>
+          <td><i>Isl 5487</i></td>
+          <td><i>
+              <div class="avatar-group">
+                <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                  <img alt="Image placeholder"
+                    src="https://cdn.pixabay.com/photo/2014/10/03/17/08/car-471971_960_720.jpg" class="rounded"
+                    style="width: 46px">
+                </a>
+              </div>
+            </i></td>
+        </tr>
+        <tr>
+          <td>May 18 2018</i></td>
+          <td>Owner Name 04</td>
+          <td><i>Isl 5752</i></td>
+          <td><i>
+              <div class="avatar-group">
+                <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                  <img alt="Image placeholder"
+                    src="https://cdn.pixabay.com/photo/2017/08/02/13/27/vintage-2571619_960_720.jpg" class="rounded"
+                    style="width: 46px">
+                </a>
+              </div>
+            </i></td>
+        </tr>
+        <tr>
+          <td>May 18 2018</td>
+          <td>Owner Name 05</td>
+          <td><i>Isl 4587</i></td>
+          <td><i>
+              <div class="avatar-group">
+                <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                  <img alt="Image placeholder"
+                    src="https://cdn.pixabay.com/photo/2017/08/05/21/58/motor-2585966_960_720.jpg" class="rounded"
+                    style="width: 46px">
+                </a>
+              </div>
+            </i></td>
+        </tr>
+        <tr>
+          <td>May 8 2018</td>
+          <td>Owner Name 06</td>
+          <td><i>Isl 3574</i></td>
+          <td><i>
+              <div class="avatar-group">
+                <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                  <img alt="Image placeholder"
+                    src="https://cdn.pixabay.com/photo/2017/08/07/00/34/car-2598002_960_720.jpg" class="rounded"
+                    style="width: 46px">
+                </a>
+              </div>
+            </i></td>
+        </tr>
+        <tr>
+          <td>May 10 2018</td>
+          <td>Owner Name 07</td>
+          <td><i>Isl 1292</i></td>
+          <td><i>
+              <div class="avatar-group">
+                <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                  <img alt="Image placeholder"
+                    src="https://cdn.pixabay.com/photo/2014/10/03/17/08/car-471969_960_720.jpg" class="rounded"
+                    style="width: 46px">
+                </a>
+              </div>
+            </i></td>
+        </tr>
+      </table>
+    </div>
+    <!--table of login details-->
+    <div id="login" class="w3-container city" style="display:none">
+      <h5>Login Details</h5>
+      <table class="w3-table w3-striped w3-white">
+        <tr>
+          <th>Operating System</th>
+          <th>Browser</th>
+          <th>login D/T</th>
+          <th>logout D/T</th >
+        </tr>
+        <tr>
+          <td>Windows</td>
+          <td>Chrome</td>
+          <td>May 28 2018, 4:30</td>
+          <td>May 28 2018, 4:45</td>
+        </tr>
+        <tr>
+          <td>Windows</td>
+          <td>Chrome</td>
+          <td>May 15 2018, 1:30</td>
+          <td>May 15 2018, 5:45</td>
+        </tr>
+        <tr>
+          <td>Linux</td>
+          <td>Opera</td>
+          <td>May 28 2018, 4:30</td>
+          <td>May 28 2018, 4:45</td>
+        </tr>
+        <tr>
+          <td>Linux</td>
+          <td>Chrome</td>
+          <td>May 28 2018, 4:30</td>
+          <td>May 28 2018, 4:45</td>
+        </tr>
+        <tr>
+          <td>Windows</td>
+          <td>Chrome</td>
+          <td>May 28 2018, 4:30</td>
+          <td>May 28 2018, 4:45</td>
+        </tr>
+        <tr>
+          <td>Windows</td>
+          <td>Chrome</td>
+          <td>May 28 2018, 4:30</td>
+          <td>May 28 2018, 4:45</td>
+        </tr>
+        <tr>
+          <td>Windows</td>
+          <td>Chrome</td>
+          <td>May 28 2018, 4:30</td>
+          <td>May 28 2018, 4:45</td>
+        </tr>
+      </table>
+    </div>
+    
     </div>
     <!-- User Profile -->
     <div id="userprofile" class="w3-modal">
@@ -170,6 +360,9 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="JavaScript/History.js">
+     
+      </script>
     <script src="JavaScript/Home.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

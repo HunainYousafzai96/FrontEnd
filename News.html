@@ -14,6 +14,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.tutorialjinni.com/mdbootstrap/4.20.0/css/mdb.css"
+    />
     <!-- Google Fonts-->
     <link
       rel="stylesheet"
@@ -46,7 +51,13 @@
       >
         <i class="fa fa-bars"></i>Menu
       </button>
-      <span class="w3-bar-item w3-right">Logo</span>
+      <span class="w3-bar-item w3-right">
+        <img
+          src="Image/logo.jpg"
+          class="w3-circle w3-margin-right"
+          style="width: 46px"
+        />
+      </span>
     </div>
 
     <!-- Sidebar/menu -->
@@ -76,7 +87,7 @@
             onclick="document.getElementById('userprofile').style.display='block'"
             ><i class="fa fa-user"></i
           ></a>
-          <a href="Setting.html" class="w3-bar-item w3-button"
+          <a href="Account.html" class="w3-bar-item w3-button"
             ><i class="fa fa-cog"></i
           ></a>
         </div>
@@ -103,18 +114,20 @@
           ><i class="fa fa-eye fa-fw"></i>  Views</a
         >
         <a href="Traffic.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-users fa-fw"></i>  Traffic</a
+          ><i class="fa fa-bar-chart fa-fw"></i>  Traffic</a
         >
         <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"
           ><i class="fa fa-bell fa-fw"></i>  News</a
         >
-        <a href="General.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-bank fa-fw"></i>  General</a
-        >
+        <a
+          href="Vehical Verification.html"
+          class="w3-bar-item w3-button w3-padding"
+          ><i class="fa fa-check-square-o"></i>  Vehical Verification
+        </a>
         <a href="History.html" class="w3-bar-item w3-button w3-padding"
           ><i class="fa fa-history fa-fw"></i>  History</a
         >
-        <a href="Setting.html" class="w3-bar-item w3-button w3-padding"
+        <a href="Account.html" class="w3-bar-item w3-button w3-padding"
           ><i class="fa fa-cog fa-fw"></i>  Settings</a
         ><br /><br />
       </div>
@@ -128,10 +141,147 @@
       title="close side menu"
       id="myOverlay"
     ></div>
-    <div class="w3-main" style="margin-left: 300px; margin-top: 43px">
+    <div class="w3-main" style="margin-left: 300px; margin-top: 60px">
+      <!---->
+
       <!--
-        Body Content
-        -->
+        Body Content-->
+      <div class="w3-margin">
+        <p class="w3-opacity"><b>Today</b></p>
+        <div
+          class="w3-panel w3-white w3-card w3-display-container"
+          id="News 01"
+        >
+          <span
+            class="w3-display-topright w3-padding w3-hover-red"
+            onclick="document.getElementById('News 01').style.display='none'"
+            >X</span
+          >
+          <p class="w3-text-blue"><b>News 01</b></p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's tandard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled
+          </p>
+          <p class="w3-text-blue"><a href="#">Show more</a></p>
+        </div>
+
+        <p class="w3-opacity"><b>Yesterday</b></p>
+        <div
+          class="w3-panel w3-white w3-card w3-display-container"
+          id="News 02"
+        >
+          <span
+            class="w3-display-topright w3-padding w3-hover-red"
+            onclick="document.getElementById('News 02').style.display='none'"
+            >X</span
+          >
+          <p class="w3-text-blue"><b>News 02</b></p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's tandard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled
+          </p>
+          <p class="w3-text-blue"><a href="#">Show more</a></p>
+        </div>
+
+        <div
+          class="w3-panel w3-white w3-card w3-display-container"
+          id="News 03"
+        >
+          <span
+            class="w3-display-topright w3-padding w3-hover-red"
+            onclick="document.getElementById('News 03').style.display='none'"
+            >X</span
+          >
+          <p class="w3-text-blue"><b>News 03</b></p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's tandard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled
+          </p>
+          <p class="w3-text-blue"><a href="#">Show more</a></p>
+        </div>
+
+        <div
+          class="w3-panel w3-white w3-card w3-display-container"
+          id="News 04"
+        >
+          <span
+            class="w3-display-topright w3-padding w3-hover-red"
+            onclick="document.getElementById('News 04').style.display='none'"
+            >X</span
+          >
+          <p class="w3-text-blue"><b>News 04</b></p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's tandard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled
+          </p>
+          <p class="w3-text-blue"><a href="#">Show more</a></p>
+        </div>
+        <p class="w3-opacity"><b>15/01/2022</b></p>
+        <div
+          class="w3-panel w3-white w3-card w3-display-container"
+          id="News 05"
+        >
+          <span
+            class="w3-display-topright w3-padding w3-hover-red"
+            onclick="document.getElementById('News 05').style.display='none'"
+            >X</span
+          >
+          <p class="w3-text-blue"><b>News 05</b></p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's tandard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled
+          </p>
+          <p class="w3-text-blue"><a href="#">Show more</a></p>
+        </div>
+        <p class="w3-opacity"><b>10/01/2022</b></p>
+        <div
+          class="w3-panel w3-white w3-card w3-display-container"
+          id="News 06"
+        >
+          <span
+            class="w3-display-topright w3-padding w3-hover-red"
+            onclick="document.getElementById('News 06').style.display='none'"
+            >X</span
+          >
+          <p class="w3-text-blue"><b>News 06</b></p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's tandard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled
+          </p>
+          <p class="w3-text-blue"><a href="#">Show more</a></p>
+        </div>
+
+        <div
+          class="w3-panel w3-white w3-card w3-display-container"
+          id="News 07"
+        >
+          <span
+            class="w3-display-topright w3-padding w3-hover-red"
+            onclick="document.getElementById('News 07').style.display='none'"
+            >X</span
+          >
+          <p class="w3-text-blue"><b>News 07</b></p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's tandard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled
+          </p>
+          <p class="w3-text-blue"><a href="#">Show more</a></p>
+        </div>
+      </div>
     </div>
     <!-- User Profile -->
     <div id="userprofile" class="w3-modal">
@@ -169,7 +319,7 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="JavaScript/Home.js"></script>
+    <script src="JavaScript/Home.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

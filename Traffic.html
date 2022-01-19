@@ -46,7 +46,12 @@
       >
         <i class="fa fa-bars"></i>Menu
       </button>
-      <span class="w3-bar-item w3-right">Logo</span>
+      <span class="w3-bar-item w3-right"
+        ><img
+          src="Image/logo.jpg"
+          class="w3-circle w3-margin-right"
+          style="width: 46px"
+      /></span>
     </div>
 
     <!-- Sidebar/menu -->
@@ -76,7 +81,7 @@
             onclick="document.getElementById('userprofile').style.display='block'"
             ><i class="fa fa-user"></i
           ></a>
-          <a href="Setting.html" class="w3-bar-item w3-button"
+          <a href="Account.html" class="w3-bar-item w3-button"
             ><i class="fa fa-cog"></i
           ></a>
         </div>
@@ -103,18 +108,20 @@
           ><i class="fa fa-eye fa-fw"></i>  Views</a
         >
         <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"
-          ><i class="fa fa-users fa-fw"></i>  Traffic</a
+          ><i class="fa fa-bar-chart fa-fw"></i>  Traffic</a
         >
         <a href="News.html" class="w3-bar-item w3-button w3-padding"
           ><i class="fa fa-bell fa-fw"></i>  News</a
         >
-        <a href="General.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-bank fa-fw"></i>  General</a
-        >
+        <a
+          href="Vehical Verification.html"
+          class="w3-bar-item w3-button w3-padding"
+          ><i class="fa fa-check-square-o"></i>  Vehical Verification
+        </a>
         <a href="History.html" class="w3-bar-item w3-button w3-padding"
           ><i class="fa fa-history fa-fw"></i>  History</a
         >
-        <a href="Setting.html" class="w3-bar-item w3-button w3-padding"
+        <a href="Account.html" class="w3-bar-item w3-button w3-padding"
           ><i class="fa fa-cog fa-fw"></i>  Settings</a
         ><br /><br />
       </div>
@@ -128,8 +135,11 @@
       title="close side menu"
       id="myOverlay"
     ></div>
-    <div class="w3-main" style="margin-left: 300px; margin-top: 43px">
-      <div id="piechart" style="width: 900px; height: 500px"></div>
+    <div class="w3-main" style="margin-left: 300px; margin-top: 60px">
+      <div id="piechart" class="w3-mobile"></div>
+      <div>
+        <canvas id="myChat"></canvas>
+      </div>
     </div>
     <!-- User Profile -->
     <div id="userprofile" class="w3-modal">
@@ -171,29 +181,37 @@
     <!--Side Manu Responsiveness-->
     <script src="JavaScript/Home.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      var labels = ["January", "February", "March", "April", "May", "June"];
+
+      var data01 = {
+        labels: labels,
+        datasets: [
+          {
+            label: "My First dataset",
+            backgroundColor: "rgb(255, 99, 132)",
+            borderColor: "rgb(255, 99, 132)",
+            data: [0, 10, 5, 2, 20, 30, 45],
+          },
+        ],
+      };
+
+      var config = {
+        type: "line",
+        data: data01,
+        options: {},
+      };
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, config);
+    </script>
+
     <!--Google Chart-->
     <script
       type="text/javascript"
       src="https://www.gstatic.com/charts/loader.js"
     ></script>
 
-    <!--Google Chart JavaScript Code -->
-    <script src="JavaScript/View.js"></script>
-
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="JavaScript/Traffic.js"></script>
   </body>
 </html>
