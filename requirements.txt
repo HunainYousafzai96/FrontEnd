@@ -17,3 +17,5 @@ psutil
 pyyaml
 requests
 setuptools
+wget
+wheel
