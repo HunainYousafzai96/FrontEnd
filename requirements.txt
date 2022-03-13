@@ -1,13 +1,19 @@
 # Python dependencies required for development
+tensorflow
+tf-models-official
+tensorflow-object-detection-api
+matplotlib
+wrapt
+typing_extensions
+opt_einsum
+gast
 astunparse
-expecttest
-future
+termcolor
+flatbuffers
+python-pillow
+easyocr
 numpy
 psutil
 pyyaml
 requests
 setuptools
-six
-types-dataclasses
-typing_extensions
-dataclasses; python_version<"3.7"
