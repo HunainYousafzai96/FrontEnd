@@ -1,21 +1,8 @@
 # Python dependencies required for development
 tensorflow
-tf-models-official
-tensorflow-object-detection-api
 matplotlib
-wrapt
-typing_extensions
-opt_einsum
-gast
-astunparse
-termcolor
-flatbuffers
-python-pillow
+scipy
+tensorflow_io
+tf-models-official
+pillow==9.0.0
 easyocr
-numpy
-psutil
-pyyaml
-requests
-setuptools
-wget
-wheel

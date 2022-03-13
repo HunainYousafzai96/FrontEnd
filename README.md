@@ -33,3 +33,10 @@ python -m ipykernel install --user --name=_name_of_kernel(FYP)
 <pre>
 pip install -r requirements.txt
 </pre>
+<br/>
+
+<b>step 6.</b> Run Environment setup.ipynb
+<br/>
+
+<b>step 6.</b> Run ImageDetection.ipynb
+<br/>
