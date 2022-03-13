@@ -27,3 +27,9 @@ pip install ipykernel
 python -m ipykernel install --user --name=_name_of_kernel(FYP)
 </pre>
 <br/>
+
+<b>step 5.</b> Run requirements.txt
+
+<pre>
+pip install -r requirements.txt
+</pre>
